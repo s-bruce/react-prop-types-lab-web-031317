@@ -47,10 +47,10 @@ describe('<Product />', () => {
   });
 
   describe('`name` prop', function () {
-    it('should be required', function () {
-      shallow(<Product {...ALL_PROPS_VALID} name={undefined} />);
-      expect(isRequiredPropTypeError(spy, 'name')).toBeTruthy(ERRORS.PROP_IS_REQUIRED);
-    });
+    // it('should be required', function () {
+    //   shallow(<Product {...ALL_PROPS_VALID} name={undefined} />);
+    //   expect(isRequiredPropTypeError(spy, 'name')).toBeTruthy(ERRORS.PROP_IS_REQUIRED);
+    // });
 
     it('should have the right propType', function () {
       shallow(<Product {...ALL_PROPS_VALID} />);
